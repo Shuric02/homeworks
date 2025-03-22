@@ -1,0 +1,168 @@
+
+/* комбінації селекторів:
+Типу div.text {} - 128 рядок
+Типу .lesson.text {} - 111 рядок
+Типу .title, .text {} - 99 рядок
+Типу .text p{} - 79 рядок
+Типу .text .lesson {} - 89 рядок
+Типу .text * {} - 28 рядок
+Типу .text > p {} - 44 рядок
+Типу .text ~ p {} - 132 рядок
+Типу .text + p {} - 61 рядок
+*/
+
+
+
+/* клас для назви сторінки*/
+
+#name-page{
+	font-size: 40px;
+}
+
+/* класи для навігації на сторінці */
+.menu{
+	background-color: #ddf3f8;
+}
+
+/* колір списку (і вкладених) */
+.menu * { 
+	color: rgb(91, 21, 196);
+}
+
+/* назва списку */
+.menu-name{
+   font-size: 30px;
+	text-align: center;
+}
+
+/* клас для перших елементів списку */
+.menu-item{
+   font-size: 20px;
+}
+
+/* налаштовуємо вкладені списки */
+.menu-item > ol{
+	font-size: 15px;
+}
+
+/* Класи для контенту*/
+/* блок загальної інформації */
+
+.general-info{
+	background-color: #e6aeae;
+}
+
+.general-info h2{
+	text-align: center;
+}
+
+/* блок гладкі накладки */
+
+.general-info + div{
+	background-color: #dcee9d;
+}
+
+.smooth-info{
+	color: #430a8d;
+}
+
+
+/* блок шиповані накладки */
+
+.studded-info{
+	text-align: center;
+}
+
+div.studded-info{
+	background-color: #d2d2d4;
+}
+.studded-info p{
+	text-align: left;
+}
+
+/* блок ох шипи */
+
+.ox-spikes{
+	color: #ff0000;
+}
+
+.studded-info .ox-spikes{
+	background-color: #d2d2d4;
+}
+
+/* блок губка */
+
+.sponge-info{
+	text-align: center;
+}
+
+.sponge-info ul, .sponge-info > p{
+	text-align: left;
+}
+
+.do-red{
+	color: #ff0000;
+}
+
+.do-shadow{
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.do-shadow.do-red{
+	text-transform: uppercase;
+}
+
+/* блок для вивчення вкладеності */
+
+/*  Умова:
+1 рівень вкладеності => перший li має бути червоного кольору, всі інші пункти зеленого кольору
+2 рівень вкладеності => перший li має бути синього кольору, всі інші li 2 рівня вкладеності помаранчевого
+3 рівень вкладеності => перший li має бути #4597f7 кольору, всі інші li 3 рівня вкладеності #5d5d5d
+span в який загорнутий текст на лише 2 рівні вкладеності має бути кольору #a0f0fc */
+
+/* окремий клас, щоб не зачипити інші div на сторінці */
+.study-class {
+	font-size: 20px;
+}
+
+div.study-class > ul > li:first-child{
+	color: red;
+}
+
+div.study-class > ul > li:first-child ~ li{
+	color: green;
+}
+
+div.study-class > ul > li:first-child > ul > li:first-child{
+	color: blue;
+}
+
+div.study-class > ul > li:first-child > ul > li:first-child ~ li{
+	color: orange;
+}
+
+div.study-class > ul > li:first-child > ul > li:first-child ~ li > ol > li:first-child{
+	color: #4597f7;
+}
+
+div.study-class > ul > li:first-child > ul > li:first-child ~ li > ol > li:first-child ~ li{
+	color: #5d5d5d;
+}
+
+div.study-class > ul > li:first-child > ul > li:first-child ~ li > ol > li > span{
+	color: #a0f0fc;
+}
+
+/* посилання на джерела */
+
+.source-name{
+	font-size: 20px;
+}
+
+.source-list > li{
+	color: #ff0000;
+}
+
+[class*="source"]{
+	text-transform: uppercase;
+}
