@@ -7,7 +7,6 @@
 header h1 {
 	font-family: Exo, sans-serif;
 	font-size: 30px;
-	font-weight: 400;
 	text-align: left;
 }
 
@@ -23,7 +22,6 @@ header ol {
 /* перше вкладення */
 header ol > li > ol > li {
 	font-size: 16px;
-	font-weight: 400;
 }
 
 h1 {
@@ -67,7 +65,6 @@ font-size: 40px;
 }
 
 #battle-danish-strait span {
-	font-weight: 400;
 	color: #711111;
 	text-decoration-line: overline;
 	text-decoration-thickness: 3px;
@@ -86,14 +83,12 @@ font-size: 40px;
 /* використаємо Bitter без курсиву 2 види*/
 #destruction-hms-hood{
 	font-family: Bitter, serif;
-	font-weight: 400;
 	font-style: normal;
 	color: #4b3573;
 }
 
 #destruction-hms-hood span {
 	font-weight: 700;
-	font-style: normal;
 	color: #4f2020;
 	text-transform: capitalize;
 	line-height: 500%;
@@ -103,7 +98,6 @@ font-size: 40px;
 /* використаємо Bitter з курсивом 2 види */
 #fatal-error{
 	font-family: Bitter, serif;
-	font-weight: 400;
 	font-style: italic;
 	color: #4b3573;
 	/* white-space: nowrap; */
@@ -131,7 +125,6 @@ font-size: 40px;
 
 #ecobazar > p ~ p {
 	font-size: 18px;
-	font-weight: 400;
 	color: #808080;
 }
 
