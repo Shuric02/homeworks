@@ -1,0 +1,132 @@
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* меню навігації */
+/* використаємо шрифт Ехо 3 види */
+header h1 {
+	font-family: Exo, sans-serif;
+	font-size: 30px;
+	text-align: left;
+}
+
+/* Основний список */
+header ol {
+	font-family: Exo, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	font-style: italic;
+	color: #1A1A1A;
+}
+
+/* перше вкладення */
+header ol > li > ol > li {
+	font-size: 16px;
+}
+
+h2 {
+text-align: center;
+font-size: 40px;
+}
+
+/* секція про бісмарк*/
+#article-bismarck p {
+	font-size: 20px;
+}
+
+/* використаємо Tektur 2 види*/
+#bismarck{
+	font-family: Tektur, sans-serif;
+	font-weight: 500;
+	color: #711111;
+	text-decoration: underline;
+	text-decoration-color: #711111; 
+}
+
+#bismarck span {
+	font-weight: 900;
+	color: aqua;
+	text-decoration-line: line-through;
+}
+
+/* використаємо Pacifico 1 вид*/
+#first-mission{
+	font-family: Pacifico, serif;
+	color: #4b3573;
+	text-decoration-line: line-through;
+	text-decoration-style: dashed;
+}
+
+/* використаємо Comfortaa 3 види */
+#battle-danish-strait{
+	font-family: Comfortaa, sans-serif;
+	font-weight: 300;
+	color: #4b3573;
+}
+
+#battle-danish-strait span {
+	color: #711111;
+	text-decoration-line: overline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 5px;
+	text-decoration-color: #711111;
+}
+
+
+
+#battle-danish-strait span > span {
+	font-weight: 500;
+	color: bisque;
+	text-shadow: #4b3573 2px 2px, #296d28 -2px -2px;
+}
+
+/* використаємо Bitter без курсиву 2 види*/
+#destruction-hms-hood{
+	font-family: Bitter, serif;
+	font-style: normal;
+	color: #4b3573;
+}
+
+#destruction-hms-hood span {
+	font-weight: 700;
+	color: #4f2020;
+	text-transform: capitalize;
+	line-height: 500%;
+	letter-spacing: 0.5em;
+}
+
+/* використаємо Bitter з курсивом 2 види */
+#fatal-error{
+	font-family: Bitter, serif;
+	font-style: italic;
+	color: #4b3573;
+	/* white-space: nowrap; */
+}
+
+#fatal-error span {
+	font-weight: 700;
+	font-style: italic;
+	color: #4f2020;
+}
+
+/* використаємо Marck Script 1 вид */
+#final-battle{
+	font-family: Marck Script, cursive;
+	color: #4b3573;
+}
+
+#ecobazar p {
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%;
+	color: #1A1A1A;
+}
+
+#ecobazar > p ~ p {
+	font-size: 18px;
+	color: #808080;
+}
+
+
+
